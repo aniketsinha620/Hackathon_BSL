@@ -1,0 +1,21 @@
+
+.active
+{  
+    background: #F9F9F9;
+box-shadow: -10px -10px 1px #FFFFFF, 5px 5px 10px rgba(135, 130, 130, 0.09);
+    color:#12B7B6 ;
+    width: 120px;
+    outline: none;
+    height: 30px;
+    font-weight: 700;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 3px 10px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.5ws;
+    
+}
+.navbar{
+    background-color: aqua;
+}

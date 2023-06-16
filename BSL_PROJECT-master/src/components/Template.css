@@ -1,0 +1,6 @@
+.logindiv{
+    padding: 50px 50px 50px;
+    box-shadow: 15px 15px 20px #fffb,
+    -15px -15px 20px #fffb;
+    border-radius: 20px;
+}
