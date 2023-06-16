@@ -13,6 +13,7 @@ export default function Service() {
   const handleClick = (e) => {
     e.preventDefault();
     if (SourceRef.current.value.trim() === '' || DestinationRef.current.value.trim() === '') {
+      alert("enter teh Source and Destination")
       return;
     }
     setCard(false)
@@ -32,7 +33,7 @@ export default function Service() {
 
 
         <div className="form-service">
-         <form action="">
+          <form action="">
             <label htmlFor="from" className='from'>From</label>
             <br />
             <input
@@ -58,13 +59,13 @@ export default function Service() {
         <div className='bus-card'>
           <h1>Our Vehicles</h1>
           <Card />
-          
+
         </div> :
         <div className='Card_bus-service'>
 
           <div>
             <Card_bus source={SourceRef.current.value} destination={DestinationRef.current.value} />
-          
+
 
           </div>
 

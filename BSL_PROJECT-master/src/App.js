@@ -11,6 +11,7 @@ import About from "./pages/About";
 import MaybeShowNav from "./components/maybeshownav/MaybeShowNav";
 import Services from "./pages/service/Services";
 import Booking from "./pages/service/Booking";
+import Seat_booking from "./pages/service/Seat_booking";
 
 
 
@@ -40,7 +41,7 @@ function App() {
         } />
 
       </Routes>
-
+      {/* <Seat_booking /> */}
       {/* <Booking /> */}
     </div>
 

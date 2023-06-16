@@ -2,6 +2,7 @@ import React from 'react'
 import "./Service.css"
 import EventSeatSharpIcon from '@mui/icons-material/EventSeatSharp';
 import KeyboardDoubleArrowDownSharpIcon from '@mui/icons-material/KeyboardDoubleArrowDownSharp';
+import Seat_booking from './Seat_booking';
 export default function Booking(props) {
     return (
 
@@ -46,8 +47,8 @@ export default function Booking(props) {
 
                 </div>
 
-                <div className='map-service'>
-                    <h1>map service</h1>
+                <div className='seat-matrix'>
+                    <Seat_booking />
                 </div>
             </div></>
     )
