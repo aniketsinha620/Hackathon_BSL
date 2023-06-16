@@ -164,7 +164,7 @@ export default function Card_bus(props) {
                         </div>
                     </div>
                 </div>
-            </div> </> : <div><Booking busname={busName} /></div>}
+            </div> </> : <div><Booking busname={busName} source={props.source}  destination={props.destination} /></div>}
 
         </>
     )

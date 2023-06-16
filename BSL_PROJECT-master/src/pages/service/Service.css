@@ -13,18 +13,18 @@ body {
 
 .service-top {
     display: flex;
-  
+
     justify-content: space-between;
 
 }
 
 .illustrator-service {
     flex: 0.5;
-    
+
     width: 40%;
-   
+
     background: #F3F3F3;
-   
+
     box-shadow: -20px -20px 50px #FFFFFF, 20px 20px 50px #D2D2D2;
     border-radius: 43px;
 
@@ -42,10 +42,10 @@ body {
 .form-service {
     flex: 0.3;
     margin-right: 100px;
-   
+
     line-height: 100%;
     gap: 20px;
-   
+
     padding: 20px;
 
 
@@ -61,7 +61,8 @@ body {
 
 
 }
-.from{
+
+.from {
     margin-top: 50px;
 
     /* background-color: #12B7B6; */
@@ -115,7 +116,7 @@ body {
 
 .bus-card {
     margin-top: 90px;
-   
+
 }
 
 .bus-card h1 {
@@ -126,7 +127,7 @@ body {
     font-size: 46px;
     line-height: 141.9%;
 
- margin-bottom: 30px;
+    margin-bottom: 30px;
     letter-spacing: 0.06em;
 
     color: #1F1F1F;
@@ -224,7 +225,7 @@ body {
 
 
 .Card_bus {
-    width: 678.35px;
+    width: 45%;
     height: 200px;
     background-color: #12B7B6;
     background: #F3F3F3;
@@ -351,9 +352,17 @@ body {
 
 }
 
+.button {
+    Width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: #12B7B6; */
+}
+
 .card_bus_detail button {
     margin-right: 40px;
-    Width: 237px;
+    Width: 70%;
+    /* Width: 237px; */
     height: 58.68px;
     background: #12B7B6;
     box-shadow: 0px 5.54974px 13.8743px rgba(0, 0, 0, 0.16);
@@ -386,8 +395,155 @@ body {
 
 }
 
+.booking_main {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    padding: 80px;
+}
+
 .booking {
-    width: 662px;
-    height: 882px;
-    background-color: #12B7B6;
+ 
+
+    flex: 0.3;
+    width: 30%;
+    height: 782px;
+    
+    box-shadow: -21.036px -21.036px 52.5899px #FFFFFF, 21.036px 21.036px 52.5899px #D2D2D2;
+    border-radius: 45.2273px;
+}
+
+.map-service {
+    flex: 0.5;
+    background-color: #1F1F1F;
+
+}
+
+.bookingbus-detail {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 100%;
+}
+
+.bookingbusimg {
+    width: 100%;
+    height: 50%;
+   
+}
+
+.bookingbusimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 36px;
+}
+
+.bookingbus-detail h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 171.4%;
+    color: #434343;
+    text-align: center;
+
+}
+
+.bookingbusdetail {
+   
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.path {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #e16060; */
+    align-items: center;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.path img {
+    /* background: #3E4958; */
+    /* Black */
+    width: 15.33px;
+    height: 42.8px;
+}
+
+.path .route {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15.1667px;
+    line-height: 136%;
+    color: #352555;
+}
+
+.from-route {
+    border-bottom: 1px solid grey;
+
+}
+
+.busno p,
+.status p,
+.contactno p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.652px;
+    line-height: 25px;
+    text-align: center;
+
+    color: #352555;
+}
+
+.busno h3,
+.status h3,
+.contactno h3 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18.2027px;
+    line-height: 33px;
+    text-align: center;
+
+    color: #352555;
+}
+
+.btn-booking {
+    width: 60%;
+    height: 65px;
+    /* background-color: #F9F9F9; */
+box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 42.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #3E548D; */
+    align-self: center;
+
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    
+    line-height: 133.4%;
+    /* or 29px */
+
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    color: #12B7B6;
+}
+.booking-icon{
+    margin-left:20%;
+    background-color: #F9F9F9;
+box-shadow: inset -20px -20px 20px #FFFFFF, inset 10px 90px 20px rgba(0, 0, 0, 0.08);
+border-radius: 42.5px;
+
 }

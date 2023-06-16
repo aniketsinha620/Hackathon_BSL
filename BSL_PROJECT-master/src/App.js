@@ -10,6 +10,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import About from "./pages/About";
 import MaybeShowNav from "./components/maybeshownav/MaybeShowNav";
 import Services from "./pages/service/Services";
+import Booking from "./pages/service/Booking";
 
 
 
@@ -21,7 +22,7 @@ function App() {
 
 
     <div className="w-screen h-screen bg-richblack-900 flex flex-col" >
-
+          
       <MaybeShowNav>
         <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
       </MaybeShowNav>
@@ -39,6 +40,8 @@ function App() {
         } />
 
       </Routes>
+
+      {/* <Booking /> */}
     </div>
 
 
