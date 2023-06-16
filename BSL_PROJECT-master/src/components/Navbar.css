@@ -2,7 +2,7 @@
 .active
 {  
     background: #F9F9F9;
-box-shadow: -10px -10px 1px #FFFFFF, 5px 5px 10px rgba(135, 130, 130, 0.09);
+box-shadow: -1px 1px 1px #FFFFFF, 10px 10px 200px rgba(135, 130, 130, 0.09);
     color:#12B7B6 ;
     width: 120px;
     outline: none;
