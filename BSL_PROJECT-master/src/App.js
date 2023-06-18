@@ -12,6 +12,8 @@ import MaybeShowNav from "./components/maybeshownav/MaybeShowNav";
 import Services from "./pages/service/Services";
 import Booking from "./pages/service/Booking";
 import Seat_booking from "./pages/service/Seat_booking";
+import Map from "./pages/service/map/Map";
+import Expand from "./pages/service/map/Expand";
 
 
 
@@ -41,8 +43,8 @@ function App() {
         } />
 
       </Routes>
-      {/* <Seat_booking /> */}
-      {/* <Booking /> */}
+  
+
     </div>
 
 
