@@ -17,17 +17,13 @@ import Expense from "./pages/dashboard/Expense";
 import Chatdashboard from "./pages/dashboard/Chatdashboard";
 import Sidenavbar from "./pages/dashboard/Sidenavbar";
 import Mayshowsidebar from "./components/maybeshownav/Mayshowsidebar";
-
-
-// =======
 import Booking from "./pages/service/Booking";
 import Seat_booking from "./pages/service/Seat_booking";
-// <<<<<<< HEAD
 import Map from "./pages/service/map/Map";
 import Expand from "./pages/service/map/Expand";
-// =======
-// >>>>>>> 51b1b5d50550361eeb4cddb0714e6bbed825291e
-// >>>>>>> 6feb08a9970a6cc04daf45e625327364b57cfa1e
+import BusdetailCard from "./pages/dashboard/BusdetailCard";
+import Busdriver from "./pages/dashboard/Busdriver";
+
 
 
 
@@ -104,6 +100,7 @@ function App() {
 
 
       </div>
+      {/* <Busdriver /> */}
     </div>
 
 
