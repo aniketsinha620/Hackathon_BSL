@@ -164,7 +164,13 @@ export default function Card_bus(props) {
                         </div>
                     </div>
                 </div>
-            </div> </> : <div><Booking busname={busName} source={props.source}  destination={props.destination} /></div>}
+            </div>
+        </> :
+            <div>
+                {console.log(props.scordinate, props.dcordinate)}
+                <Booking busname={busName} source={props.source} destination={props.destination}
+                    scordinate={props.scordinate} dcordinate={props.dcordinate} />
+            </div>}
 
         </>
     )

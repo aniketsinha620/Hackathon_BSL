@@ -110,7 +110,7 @@ body {
 
 }
 
-.form-service button:hover {
+.form-service button:focus {
     box-shadow: inset -10px -10px 20px #FFFFFF, inset 10px 10px 20px rgba(0, 0, 0, 0.09);
 }
 
@@ -406,7 +406,8 @@ body {
 
 
     flex: 0.3;
-    width: 60%;
+    width: 40%;
+    /* background-color: #12B7B6; */
     height: 850px;
 
     box-shadow: -21.036px -21.036px 52.5899px #FFFFFF, 21.036px 21.036px 52.5899px #D2D2D2;
@@ -422,6 +423,16 @@ body {
     box-shadow: -21.036px -21.036px 52.5899px #FFFFFF, 21.036px 21.036px 52.5899px #D2D2D2;
     border-radius: 45.2273px;
 
+}
+
+.map-matrix{
+    flex: 0.4;
+    width: 50%;
+    /* padding: 0 40px; */
+    background-color: #1F1F1F;
+    background: #F3F3F3;
+    box-shadow: -21.036px -21.036px 52.5899px #FFFFFF, 21.036px 21.036px 52.5899px #D2D2D2;
+    border-radius: 45.2273px;
 }
 
 .bookingbus-detail {
