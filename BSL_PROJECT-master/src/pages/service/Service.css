@@ -20,12 +20,9 @@ body {
 
 .illustrator-service {
     flex: 0.5;
-
-    width: 40%;
-
+    width: 45%;
     background: #F3F3F3;
-
-    box-shadow: -20px -20px 50px #FFFFFF, 20px 20px 50px #D2D2D2;
+  box-shadow: -20px -20px 50px #FFFFFF, 20px 20px 50px #D2D2D2;
     border-radius: 43px;
 
 
@@ -36,7 +33,7 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 43px;
-    box-shadow: -20px -20px 50px #FFFFFF, 20px 20px 50px #D2D2D2;
+    /* box-shadow: -20px -20px 50px #FFFFFF, 20px 20px 50px #D2D2D2; */
 }
 
 .form-service {
@@ -112,6 +109,7 @@ body {
 
 .form-service button:focus {
     box-shadow: inset -10px -10px 20px #FFFFFF, inset 10px 10px 20px rgba(0, 0, 0, 0.09);
+    border: 1px solid #12B7B6;
 }
 
 .bus-card {
@@ -425,7 +423,7 @@ body {
 
 }
 
-.map-matrix{
+.map-matrix {
     flex: 0.4;
     width: 50%;
     /* padding: 0 40px; */

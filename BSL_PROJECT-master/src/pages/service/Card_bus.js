@@ -57,7 +57,7 @@ export default function Card_bus(props) {
                     <div className="busName">
                         <h2>SRS TRAVEL</h2>
                         <div className="time">
-                            9:45 AM
+                            10:45 AM
 
                         </div>
                     </div>
@@ -103,7 +103,7 @@ export default function Card_bus(props) {
                     <div className="busName">
                         <h2>ASHOK LEYLAND</h2>
                         <div className="time">
-                            9:45 AM
+                            11:45 AM
 
                         </div>
                     </div>
@@ -138,7 +138,7 @@ export default function Card_bus(props) {
 
 
                     <div className="busName">
-                        <h2>VRL TRAVELS</h2>
+                        <h2>VRL TRAVELS </h2>
                         <div className="time">
                             9:45 AM
 
