@@ -10,6 +10,8 @@ import "leaflet-control-geocoder";
 const chas = [23.6362, 86.1828];
 const dhanbad = [23.7957, 86.4304];
 const chandrapura = [23.74877, 86.11955];
+const jharia = [23.7426,86.4111];
+const sindri = [23.6546, 86.4737];
 
 L.Marker.prototype.options.icon = L.icon({
     iconUrl:
@@ -29,14 +31,14 @@ export default function Routing(props) {
     useEffect(() => {
         if (!map) return;
 
-        // Route 1: Chas to Dhanbad
+     
         const marker1 = L.marker([22.8046, 86.2029], {
             icon: DefaultIcon
         }).addTo(map);
         const routingControl1 = L.Routing.control({
             waypoints: [
-                L.latLng(chas),    // Chas
-                L.latLng(chandrapura)  // Dhanbad
+                L.latLng(chas),   
+                L.latLng(sindri)  
             ],lineOptions: {
                 styles: [{ color: 'blue', opacity: 0.6, weight: 4 }]
               },
@@ -56,14 +58,14 @@ export default function Routing(props) {
         { console.log(source) }
 
 
-        // Route 2: Dhanbad to Chandrapura
+       
         const marker2 = L.marker([22.8046, 86.2029], {
           icon: DefaultIcon
         }).addTo(map);
         const routingControl2 = L.Routing.control({
           waypoints: [
-            L.latLng(props.source),      // Dhanbad
-            L.latLng(props.destination)   // Chandrapura
+            L.latLng(props.source),     
+            L.latLng(props.destination)   
           ], lineOptions: {
             styles: [{ color: 'red', opacity: 0.6, weight: 4 }]
           },
@@ -77,14 +79,14 @@ export default function Routing(props) {
           console.log(e);
         }).addTo(map);
 
-        // Route 3: Chandrapura to Dhanbad
+       
         const marker3 = L.marker([22.8046, 86.2029], {
             icon: DefaultIcon
         }).addTo(map);
         const routingControl3 = L.Routing.control({
             waypoints: [
-                L.latLng(chandrapura),  // Chandrapura
-                L.latLng(dhanbad)       // Dhanbad
+                L.latLng(chandrapura), 
+                L.latLng(dhanbad)      
             ],lineOptions: {
                 styles: [{ color: 'blue', opacity: 0.6, weight: 4 }]
               },
@@ -100,7 +102,7 @@ export default function Routing(props) {
 
         return () => {
             map.removeControl(routingControl1);
-            //   map.removeControl(routingControl2);
+              map.removeControl(routingControl2);
             map.removeControl(routingControl3);
         };
     }, [map]);

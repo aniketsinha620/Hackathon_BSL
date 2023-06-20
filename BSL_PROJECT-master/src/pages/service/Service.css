@@ -110,7 +110,7 @@ body {
 
 }
 
-.form-service button:hover {
+.form-service button:focus {
     box-shadow: inset -10px -10px 20px #FFFFFF, inset 10px 10px 20px rgba(0, 0, 0, 0.09);
 }
 

@@ -8,7 +8,7 @@ const MaybeShowNav = ({children}) => {
 
     useEffect(()=>{
         console.log('This is location:' , location);
-        if (location.pathname === '/dashboard' || location.pathname === '/login' || location.pathname === '/signup') {
+        if (location.pathname === '/dashboard' || location.pathname === '/login' || location.pathname === '/signup' || location.pathname === '/dashboard/Admin' || location.pathname === '/dashboard/expense' || location.pathname === '/dashboard/chat' || location.pathname === '/dashboard/form') {
             setShownavbar(false);  
         }
         else

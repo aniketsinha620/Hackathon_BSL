@@ -69,7 +69,7 @@ const Navbar = (props) => {
                 
             </div>
             { isLoggedIn &&
-            <Link to="/dashboard">
+            <Link to="/dashboard/Admin">
                 <button className=' text-blue-200   py-[20px] px-[12px] rounded-[8px]  border-richblack-700'>DashBoad</button>
             </Link>
             }
