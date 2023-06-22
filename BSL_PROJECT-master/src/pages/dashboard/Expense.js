@@ -20,7 +20,7 @@ const Expense = () => {
                             className="sittingillustrator "
                         />
                         <div className='cardcollection'>
-                        
+                               hello
                         </div>
                         <div className='cardcollect'>
                              <Areachat/>

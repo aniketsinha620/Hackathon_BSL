@@ -15,7 +15,7 @@ const handleClick=()=>{
 
     return (
 
-        <>
+        <>{console.log(props.scordinate,"hello")}
             <h1 className='booking_heading'>{props.busname}</h1>
             <div className='booking_main'>
                 <div className="booking">
