@@ -1,29 +1,55 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
-import "./Service.css"
+import "./Service.css";
 import Card from './Card';
+import { OpenStreetMapProvider } from 'leaflet-geosearch';
 import Card_bus from './Card_bus';
 
-
 export default function Service() {
-  const [card, setCard] = useState(true)
+  const provider = new OpenStreetMapProvider();
+  const [searchResults, setSearchResults] = useState([]);
+  const [source, setSource] = useState([]);
+  const [destination, setDestination] = useState([]);
+  const [card, setCard] = useState(true);
   const SourceRef = useRef(null);
   const DestinationRef = useRef(null);
 
-  const handleClick = (e) => {
-    e.preventDefault();
+  const handleClick = async (e) => {
+    e.preventDefault(); // Prevent form submission and page refresh
+
     if (SourceRef.current.value.trim() === '' || DestinationRef.current.value.trim() === '') {
-      alert("enter teh Source and Destination")
+      alert("Enter the Source and Destination");
       return;
     }
-    setCard(false)
-    console.log(SourceRef.current.value, DestinationRef.current.value)
 
-  }
+    setCard(false);
+    console.log(SourceRef.current.value, DestinationRef.current.value);
+
+    const results = await provider.search({ query: SourceRef.current.value });
+    const cityResults = await provider.search({ query: DestinationRef.current.value });
+
+    if (results.length > 0 && cityResults.length > 0) {
+      setSearchResults(results);
+      const newX = results[0].x;
+      const newY = results[0].y;
+      setSource([...source, newX, newY]);
+      console.log(source);
+
+      const cityX = cityResults[0].x;
+      const cityY = cityResults[0].y;
+      setDestination([...destination, cityX, cityY]);
+      console.log(destination);
+    } else {
+      console.log("No results found.");
+    }
+
+    return false; 
+  };
 
   const handleChange = () => {
-    console.log("hello")
-  }
+    console.log("hello");
+  };
+
   return (
     <div className='service'>
       <div className="service-top">
@@ -31,9 +57,8 @@ export default function Service() {
           <img src="service.svg" alt="" />
         </div>
 
-
         <div className="form-service">
-          <form action="">
+          <form>
             <label htmlFor="from" className='from'>From</label>
             <br />
             <input
@@ -50,7 +75,7 @@ export default function Service() {
               ref={DestinationRef}
               placeholder='Enter the Destination' />
             <br />
-            <button onClick={(e) => handleClick(e)}>Search  <SearchIcon /></button>
+            <button onClick={handleClick}>Search  <SearchIcon /></button>
           </form>
         </div>
       </div>
@@ -59,17 +84,13 @@ export default function Service() {
         <div className='bus-card'>
           <h1>Our Vehicles</h1>
           <Card />
-
         </div> :
         <div className='Card_bus-service'>
-
           <div>
-            <Card_bus source={SourceRef.current.value} destination={DestinationRef.current.value} />
-
-
+            <Card_bus source={SourceRef.current.value} destination={DestinationRef.current.value} 
+            scordinate={source}  dcordinate={destination}/>
           </div>
-
         </div>}
     </div>
-  )
+  );
 }

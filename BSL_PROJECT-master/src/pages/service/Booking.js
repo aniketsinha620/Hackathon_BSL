@@ -3,10 +3,19 @@ import "./Service.css"
 import EventSeatSharpIcon from '@mui/icons-material/EventSeatSharp';
 import KeyboardDoubleArrowDownSharpIcon from '@mui/icons-material/KeyboardDoubleArrowDownSharp';
 import Seat_booking from './Seat_booking';
+import Map from './map/Map';
+
+
 export default function Booking(props) {
+    const [map, setMap] = React.useState(true)
+const handleClick=()=>{
+    setMap(prev=>!prev)
+}
+
+
     return (
 
-        <>
+        <>{console.log(props.scordinate,"hello")}
             <h1 className='booking_heading'>{props.busname}</h1>
             <div className='booking_main'>
                 <div className="booking">
@@ -40,16 +49,21 @@ export default function Booking(props) {
                                 <p>CONTACT NO:- <h3>8340283015</h3></p>
                             </div>
                         </div>
-                        <button className='btn-booking'><p>VIEW MAP </p><p className='booking-icon'><KeyboardDoubleArrowDownSharpIcon /></p></button>
+                        <button className='btn-booking' onClick={()=>handleClick()}><p>{map?"VIEW MAP":" SEAT MATRIX" }</p><p className='booking-icon'><KeyboardDoubleArrowDownSharpIcon /></p></button>
                     </div>
 
 
 
                 </div>
 
-                <div className='seat-matrix'>
-                    <Seat_booking />
-                </div>
+               
+                    {map ?  <div className='seat-matrix'><Seat_booking /> 
+                   
+                    </div>: 
+                    <div className='map-matrix'>
+                         <Map  scordinate={props.scordinate} dcordinate={props.dcordinate}/>
+                         </div>}
+                
             </div></>
     )
 }
