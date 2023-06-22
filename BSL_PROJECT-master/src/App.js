@@ -10,7 +10,6 @@ import PrivateRoute from "./components/PrivateRoute";
 import About from "./pages/About";
 import MaybeShowNav from "./components/maybeshownav/MaybeShowNav";
 import Services from "./pages/service/Services";
-<<<<<<< HEAD
 import Carddashboard from "./pages/dashboard/Carddashboard";
 import { Layout } from "./pages/dashboard/Layout";
 import Expense from "./pages/dashboard/Expense";
@@ -19,10 +18,6 @@ import Sidenavbar from "./pages/dashboard/Sidenavbar";
 import Mayshowsidebar from "./components/maybeshownav/Mayshowsidebar";
 
 
-=======
-import Booking from "./pages/service/Booking";
-import Seat_booking from "./pages/service/Seat_booking";
->>>>>>> 51b1b5d50550361eeb4cddb0714e6bbed825291e
 
 
 
@@ -33,13 +28,8 @@ function App() {
   return (
 
 
-<<<<<<< HEAD
     <div className="appjs w-screen h-screen bg-richblack-900 flex flex-col" >
      
-=======
-    <div className="w-screen h-screen bg-richblack-900 flex flex-col" >
-          
->>>>>>> 51b1b5d50550361eeb4cddb0714e6bbed825291e
       <MaybeShowNav>
         <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
       </MaybeShowNav>
@@ -87,17 +77,7 @@ function App() {
           </PrivateRoute> } >
         </Route>
         
-          
-          
-        
-       
-        
-
-
-
       </Routes>
-      {/* <Seat_booking /> */}
-      {/* <Booking /> */}
     </div>
 
 
