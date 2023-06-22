@@ -38,7 +38,7 @@ function App() {
     <div className="appjs w-screen h-screen bg-richblack-900 flex flex-col" >
 
     
-      <div className="w-screen h-screen bg-richblack-900 flex flex-col" >
+     <div className="w-screen h-screen bg-richblack-900 flex flex-col" >
 
      
         <MaybeShowNav>
@@ -99,8 +99,8 @@ function App() {
         </Routes>
 
 
-      </div>
-      {/* <Busdriver /> */}
+      </div> 
+     
     </div>
 
 
