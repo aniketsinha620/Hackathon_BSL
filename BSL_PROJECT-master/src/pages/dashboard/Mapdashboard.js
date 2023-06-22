@@ -2,7 +2,8 @@ import { MapContainer, Marker, Popup, TileLayer, Circle } from "react-leaflet";
 import React from "react";
 import L from "leaflet";
 import 'leaflet/dist/leaflet.css';
-import "./mapdashboard.css"
+import styles from "./mapdashboard.module.css"; 
+
 import "leaflet-routing-machine";
 import "leaflet-routing-machine/dist/leaflet-routing-machine.css";
 
@@ -64,9 +65,9 @@ export default function Mapdashboard(props) {
  
   return (
     <>
-       <div className="map-conatiner-flex">
-        {console.log("map", source[1], source[0], props.dcordinate[0], props.dcordinate[1])}
-        <MapContainer center={[source[1], source[0]]} zoom={9} scrollWheelZoom={false}>
+       <div  >
+        
+        <MapContainer center={[source[1], source[0]]} zoom={9} scrollWheelZoom={false}  style={{ width:"100% " ,height: "25vh" }}>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

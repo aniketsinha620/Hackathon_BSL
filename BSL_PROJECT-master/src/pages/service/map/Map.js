@@ -83,12 +83,7 @@ export default function Map(props) {
           <Marker position={[source[1], source[0]]} icon={DefaultIcon}>
             <Popup>Your Location</Popup>
           </Marker>
-          {/* <Marker position={[source[1], source[0]]} icon={DefaultIcon}>
-            <Popup>Your Location</Popup>
-          </Marker> 
-          <Marker position={[source[1], source[0]]} icon={DefaultIcon}>
-            <Popup>Your Location</Popup>
-          </Marker> */}
+       
 
 
           <Circle center={[source[1], source[0]]} radius={25000} />
