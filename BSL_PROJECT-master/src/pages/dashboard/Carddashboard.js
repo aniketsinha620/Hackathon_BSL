@@ -80,18 +80,6 @@ const Carddashboard = () => {
                 destination={destination}
               />
                 <button onClick={() => setbool(prev => !prev)}>close</button></div>}
-
-
-
-
-
-
-
-
-
-
-
-
             <div className='cardcollect'>
               <Barchat className='chatcss' />
               

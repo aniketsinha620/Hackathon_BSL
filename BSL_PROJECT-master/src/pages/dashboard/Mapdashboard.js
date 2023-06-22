@@ -73,11 +73,11 @@ export default function Mapdashboard(props) {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
-          {
+          {/* {
             <Marker position={position} icon={busIcon}>
               <Popup>Bus Location</Popup>
             </Marker>
-          }
+          } */}
           <Marker position={[source[1], source[0]]} icon={DefaultIcon}>
             <Popup>Your Location</Popup>
           </Marker>
