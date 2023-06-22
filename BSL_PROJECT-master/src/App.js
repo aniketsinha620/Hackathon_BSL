@@ -10,19 +10,26 @@ import PrivateRoute from "./components/PrivateRoute";
 import About from "./pages/About";
 import MaybeShowNav from "./components/maybeshownav/MaybeShowNav";
 import Services from "./pages/service/Services";
+<<<<<<< HEAD
+=======
 // <<<<<<< HEAD
+>>>>>>> cba7c80ffbebaf48a64e038923795d6505e7706b
 import Carddashboard from "./pages/dashboard/Carddashboard";
 import { Layout } from "./pages/dashboard/Layout";
 import Expense from "./pages/dashboard/Expense";
 import Chatdashboard from "./pages/dashboard/Chatdashboard";
 import Sidenavbar from "./pages/dashboard/Sidenavbar";
 import Mayshowsidebar from "./components/maybeshownav/Mayshowsidebar";
+<<<<<<< HEAD
+
+=======
 import Booking from "./pages/service/Booking";
 import Seat_booking from "./pages/service/Seat_booking";
 import Map from "./pages/service/map/Map";
 import Expand from "./pages/service/map/Expand";
 import BusdetailCard from "./pages/dashboard/BusdetailCard";
 import Busdriver from "./pages/dashboard/Busdriver";
+>>>>>>> cba7c80ffbebaf48a64e038923795d6505e7706b
 
 
 
@@ -34,19 +41,31 @@ function App() {
   return (
 
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> cba7c80ffbebaf48a64e038923795d6505e7706b
     <div className="appjs w-screen h-screen bg-richblack-900 flex flex-col" >
 
     
      <div className="w-screen h-screen bg-richblack-900 flex flex-col" >
 
      
+<<<<<<< HEAD
+      <MaybeShowNav>
+        <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+      </MaybeShowNav>
+      <Mayshowsidebar>
+        <Sidenavbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+      </Mayshowsidebar>
+=======
         <MaybeShowNav>
           <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
         </MaybeShowNav>
         <Mayshowsidebar>
           <Sidenavbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
         </Mayshowsidebar>
+>>>>>>> cba7c80ffbebaf48a64e038923795d6505e7706b
 
         <Routes>
           <Route path="/" element={<Home isLoggedIn={isLoggedIn} />} />
@@ -72,6 +91,25 @@ function App() {
             </PrivateRoute>} >
           </Route>
 
+<<<<<<< HEAD
+        <Route path="/dashboard/expense" element={
+          <PrivateRoute isLoggedIn={isLoggedIn}>
+            <Expense/>
+          </PrivateRoute> } >
+        </Route>
+        <Route path="/dashboard/chat" element={
+          <PrivateRoute isLoggedIn={isLoggedIn}>
+           <Chatdashboard/>
+          </PrivateRoute> } >
+        </Route>
+        <Route path="/dashboard/form" element={
+          <PrivateRoute isLoggedIn={isLoggedIn}>
+            <Layout/>
+          </PrivateRoute> } >
+        </Route>
+        
+      </Routes>
+=======
           <Route path="/dashboard/expense" element={
             <PrivateRoute isLoggedIn={isLoggedIn}>
               <Expense />
@@ -101,6 +139,7 @@ function App() {
 
       </div> 
      
+>>>>>>> cba7c80ffbebaf48a64e038923795d6505e7706b
     </div>
 
 
