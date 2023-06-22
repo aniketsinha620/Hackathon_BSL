@@ -5,7 +5,7 @@ section{
 }
 
 section .form_data{
-    max-width: 482px;
+    /* max-width: 482px; */
     margin: 1px;
     padding: -6px 2px;
     /* box-shadow: 0 0 15px -10px #2d3748; */
@@ -15,7 +15,6 @@ section .form_data{
     align-items: center;
     /* border: 2px solid pink; */
 }
-
 
 
 .form_data h1{
