@@ -4,6 +4,8 @@ import "./Service.css";
 import Card from './Card';
 import { OpenStreetMapProvider } from 'leaflet-geosearch';
 import Card_bus from './Card_bus';
+import servieceimage from '../../homeassets/service123.svg'
+import Footer from '../Footer';
 
 export default function Service() {
   const provider = new OpenStreetMapProvider();
@@ -51,38 +53,49 @@ export default function Service() {
   };
 
   return (
+  
+
+    
     <div className='service'>
-      <div className="service-top">
-        <div className="illustrator-service">
-          <img src="service.svg" alt="" />
-        </div>
 
-        <div className="form-service">
-          <form>
-            <label htmlFor="from" className='from'>From</label>
-            <br />
-            <input
-              type="text"
-              id='from'
-              ref={SourceRef}
-              placeholder='Enter the Source' />
-            <br />
-            <label htmlFor="to">To</label>
-            <br />
-            <input
-              type="text"
-              id='to'
-              ref={DestinationRef}
-              placeholder='Enter the Destination' />
-            <br />
-            <button onClick={handleClick}>Search  <SearchIcon /></button>
-          </form>
-        </div>
+       <div className="service-top">
+             <div className="illustrator-service">
+              {/* <img src="service.svg" alt="" /> */}
+              <img src={servieceimage} alt="Students"
+                widht={558}
+                height={490}
+                loading='lazy'
+                // className='ourcclientimage'
+              />
+              </div>
+
+              <div className="form-service">
+                 <form>
+                          <label htmlFor="from" className='from'>From</label>
+                           <br />
+                         <input
+                           type="text"
+                             id='from'
+                         ref={SourceRef}
+                         placeholder='Enter the Source' />
+                             <br />
+                         <label htmlFor="to">To</label>
+                         <br />
+                        <input
+                        type="text"
+                       id='to'
+                         ref={DestinationRef}
+                         placeholder='Enter the Destination' />
+                        <br />
+                          <button onClick={handleClick}>Search  <SearchIcon /></button>
+                    </form>
+             </div>
       </div>
-
+ 
+      <section>
       {card === true ?
         <div className='bus-card'>
-          <h1>Our Vehicles</h1>
+          <h1 className='headingservice'>Our Vehicles</h1>
           <Card />
         </div> :
         <div className='Card_bus-service'>
@@ -91,6 +104,8 @@ export default function Service() {
             scordinate={source}  dcordinate={destination}/>
           </div>
         </div>}
+    </section>
+    <Footer/>
     </div>
   );
 }

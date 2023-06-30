@@ -3,46 +3,42 @@ body {
 }
 
 
-.service {
-    /* background-color: aqua; */
-    padding: 80px;
-    margin-top: 0px;
-    /* background-color: #12B7B6; */
-}
 
 
-.service-top {
-    display: flex;
 
-    justify-content: space-between;
 
-}
+    .service-top {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+    }
+
+
 
 .illustrator-service {
-    flex: 0.5;
+    /* flex: 0.5; */
     width: 45%;
     background: #F3F3F3;
-  box-shadow: -20px -20px 50px #FFFFFF, 20px 20px 50px #D2D2D2;
+    box-shadow: -20px -20px 50px #FFFFFF, 20px 20px 50px #D2D2D2;
     border-radius: 43px;
 
 
 }
 
 .illustrator-service img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 43px;
+    padding: 43px 29px 1px 44px;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* object-fit: cover; */
+    /* border-radius: 43px; */
     /* box-shadow: -20px -20px 50px #FFFFFF, 20px 20px 50px #D2D2D2; */
 }
 
 .form-service {
-    flex: 0.3;
-    margin-right: 100px;
-
+    flex: 0.3 1;
+    margin-right: 25px;
     line-height: 100%;
     gap: 20px;
-
     padding: 20px;
 
 
@@ -80,6 +76,7 @@ body {
     line-height: 157.4%;
     font-family: 'Montserrat';
     color: #12B7B6;
+    padding: 0px 0px 0px 21px;
 
 }
 
@@ -102,7 +99,8 @@ body {
     height: 68px;
     font-weight: 400;
     font-size: 30px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    background: #F3F3F3;
+   box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(0, 0, 0, 0.09);
 
 
 }
@@ -142,12 +140,12 @@ body {
 
 .cardCollection-service {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .card-service {
-    width: 446px;
-    height: 595px;
+    width: 28%;
+    height: 555px;
     display: flex;
     flex-direction: column;
 
@@ -157,9 +155,8 @@ body {
 }
 
 .photo-service {
-    flex: 0.5;
-    width: 445px;
-    height: 349px;
+    width: 100%;
+    height: 52%;
 }
 
 .photo-service img {
@@ -185,6 +182,7 @@ body {
     display: flex;
     justify-content: center;
     color: #1F1F1F;
+    margin-top: 1rem;
 }
 
 .detail-service p {
@@ -196,6 +194,7 @@ body {
     text-align: center;
     /* letter-spacing: -0.04em; */
     color: #434343;
+    padding: 10px;
 }
 
 
@@ -208,6 +207,7 @@ body {
 }
 
 .heading-service {
+    margin-left: 2rem;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -390,6 +390,7 @@ body {
     line-height: 141.9%;
     letter-spacing: 0.06em;
     color: #1F1F1F;
+    margin-left: 2rem;
 
 }
 
@@ -657,4 +658,17 @@ body {
 
 
     font-size: 20px;
+}
+
+.headingservice{
+    margin-left: 2rem;
+}
+
+.imagehaiservice{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    border-radius: 30px 30px 0px 0px;
+    /* filter: grayscale(1); */
+    /* margin-bottom: 2rem; */
 }
