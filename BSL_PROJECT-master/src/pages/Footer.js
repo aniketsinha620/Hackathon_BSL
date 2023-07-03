@@ -1,13 +1,13 @@
 import React from 'react';
-import {
-  MDBFooter,
-  MDBContainer,
-  MDBIcon,
-  MDBInput,
-  MDBCol,
-  MDBRow,
-  MDBBtn
-} from 'mdb-react-ui-kit';
+// import {
+//   MDBFooter,
+//   MDBContainer,
+//   MDBIcon,
+//   MDBInput,
+//   MDBCol,
+//   MDBRow,
+//   MDBBtn
+// } from 'mdb-react-ui-kit';
 
 
 
@@ -16,7 +16,7 @@ import {
 const Footer = () => {
   return (
     <div>
-        <MDBFooter className='text-center' color='dark' bgColor='dark'>
+        {/* <MDBFooter className='text-center' color='dark' bgColor='dark'>
       <MDBContainer className='p-4'>
         
 
@@ -53,8 +53,8 @@ const Footer = () => {
               A4  Network
         </a>
       </div>
-    </MDBFooter>
-
+    </MDBFooter> */}
+hello
     </div>
   )
 }
