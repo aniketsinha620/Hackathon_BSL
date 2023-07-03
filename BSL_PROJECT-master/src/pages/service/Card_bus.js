@@ -155,7 +155,7 @@ export default function Card_bus(props) {
                             <div className="destination">
                                 <div className="icon">< LocationOnIcon /></div>
                                 <div className="detail">
-                                    <p><h1>{props.destination}</h1>15-Dec-2020 </p>
+                                    <p><h1>{props.destination}</h1>15-Oct-2020 </p>
                                 </div>
                             </div>
                         </div>
