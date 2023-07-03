@@ -241,10 +241,10 @@ const Home = () => {
             <div><textarea className='inputcontact' type='text' placeholder='Text'></textarea></div>
             <div ><button className='btncontacthai'>Get in Touch With Us</button></div>
             <div className='socialmedaiicons'>
-              <div><BsInstagram className='icons' /></div>
-              <div><FaFacebookF className='icons' /></div>
-              <div><BsMessenger className='icons' /></div>
-              <div><RiTelegramLine className='icons' /></div>
+            <div><a href='https://www.instagram.com'> <BsInstagram className='icons' /> </a></div>
+            <div><a href='https://www.facebook.com/'>< FaFacebookF className='icons' /> </a></div>
+             <div> <a href='https://www.messenger.com/'><BsMessenger className='icons' /></a></div>
+             <div><a href='https://web.telegram.org/a/'><RiTelegramLine className='icons' /></a></div>
             </div>
             </div>
           </div>

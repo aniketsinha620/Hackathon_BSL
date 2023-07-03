@@ -5,6 +5,7 @@ import btillustrator from "../../assets/rafiki.svg"
 // import Areachat from '../../components/Areachat'
 import Graph from './Graph'
 import Graph1 from './Graph1'
+import Barchat from '../../components/Barchat'
 
 const Expense = () => {
     return (
@@ -25,7 +26,7 @@ const Expense = () => {
                         <Graph/>  
                         </div>
                         <div className='cardcollect'>
-                        
+                          <Barchat/>
                         </div>
 
                     </div>
