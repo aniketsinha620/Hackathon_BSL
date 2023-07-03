@@ -55,12 +55,16 @@ router.post("/login", async (req, res) => {
 
     const { email, password } = req.body;
 
+    console.log(email);
+    console.log(password);
+
     if (!email || !password) {
         res.status(422).json({ error: "fill all the details" })
     }
 
     try {
        const userValid = await userdb.findOne({email:email});
+      
 
         if(userValid){
 

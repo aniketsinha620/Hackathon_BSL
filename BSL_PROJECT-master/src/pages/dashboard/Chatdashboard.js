@@ -26,7 +26,7 @@ const Chatdashboard = () => {
                             className="sittingillustrator "
                         />
 
-                        <div className="__main">
+                        <div className="dashboardForm">
                             <Nav />
                             <ChatBody />
                         </div>

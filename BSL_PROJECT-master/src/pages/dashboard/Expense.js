@@ -1,8 +1,10 @@
 import React from 'react'
 import sittingillustrator from "../../assets/pana.svg"
 import btillustrator from "../../assets/rafiki.svg"
-import Piachart from '../../components/Piachart'
-import Areachat from '../../components/Areachat'
+// import Piachart from '../../components/Piachart'
+// import Areachat from '../../components/Areachat'
+import Graph from './Graph'
+import Graph1 from './Graph1'
 
 const Expense = () => {
     return (
@@ -20,20 +22,18 @@ const Expense = () => {
                             className="sittingillustrator "
                         />
                         <div className='cardcollection'>
-                               hello
+                        <Graph/>  
                         </div>
                         <div className='cardcollect'>
-                             <Areachat/>
+                        
                         </div>
 
                     </div>
                     <div className='rightdiv-dashboard'>
                         <div className='dashboardmap'>
-                            <Piachart />
+                           <Graph1/>
                         </div>
-                        <div className='dashboardmap'>
-                            <Piachart />
-                        </div>
+                       
 
 
                         <img className='btillustrator' src={btillustrator} alt="sitting"

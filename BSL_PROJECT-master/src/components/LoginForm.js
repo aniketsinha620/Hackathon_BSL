@@ -69,6 +69,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
 
             const res = await data.json();
              console.log(res);
+             
 
             if(res.status === 201){
                 
@@ -79,6 +80,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
                 setInpval({...inpval,email:"",password:""});
                
             }
+          
         }
     }
 
