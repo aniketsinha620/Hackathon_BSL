@@ -167,9 +167,10 @@ export default function Card_bus(props) {
             </div>
         </> :
             <div>
-                {console.log(props.scordinate, props.dcordinate)}
+                {console.log(props.scordinate, props.dcordinate,props.place)}
                 <Booking busname={busName} source={props.source} destination={props.destination}
-                    scordinate={props.scordinate} dcordinate={props.dcordinate} />
+                    scordinate={props.scordinate} dcordinate={props.dcordinate}  place={props.place}/>
+                   
             </div>}
 
         </>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import landing from '../homeassets/landingpageimg.svg'
 import primises from '../homeassets/1234.svg'
 import reviewicon from '../homeassets/1.svg'
@@ -20,12 +20,13 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsMessenger } from "react-icons/bs";
 import { RiTelegramLine } from "react-icons/ri";
 import { BsFillStarFill } from "react-icons/bs";
-import Footer from './Footer' 
+import Footer from './Footer'
 
 
 
 
 const Home = () => {
+
   return (
     <div className='wrapup'>
       <section className='firstabout'>
@@ -35,7 +36,7 @@ const Home = () => {
             <div className='exploreabout'> <button className='btnsweet'>Explore more</button> </div>
           </div>
           <div className='landingimagehai' >
-             
+
             <img src='https://www.traveldealsfinder.com/wp-content/uploads/bokaro.jpg' alt="Students"
               widht={55}
               height={49}
@@ -51,7 +52,7 @@ const Home = () => {
 
       <section>
         <div className='primisesdivhai'>
-          <div className='insideprimisis'>
+          <div className='insideprimisis' >
             <div className='sudharna'><img src={insidepr} alt="Students"
               widht={55}
               height={49}
@@ -59,11 +60,11 @@ const Home = () => {
               className='meraparesani'
 
             /></div>
-            <div className='headingprimises'>INSIDE PREMISES</div>
-            <div className='textprimises'>Welcome to our plant transportation service, where we offer convenient and efficient rides within our facility. Whether you need to travel between different sections of the plant, visit specific workstations, or reach important meetings on time.</div>
-            <div>  <Link to= '/services'><button className='btnsweet'> Click to Enter</button></Link> </div>
+            <div className='headingprimises' >INSIDE PREMISES</div>
+            <div className='textprimises'>Welcome to our plant transportation service, where we offer convenient and efficient rides within our facility. Whether you need to travel between different sections of the plant, visit specific workstations, or reach important meetings on time, our dedicated transportation system is here to assist you.</div>
+            <div>  <Link to='/services/inside'><button className='btnsweet'> Click to Enter</button></Link> </div>
           </div>
-          <div className='insideprimisis'>
+          <div className='insideprimisis' >
             <div className='sudharna'> <img src={outside} alt="Students"
               widht={55}
               height={49}
@@ -71,9 +72,9 @@ const Home = () => {
               className='meraparesani'
 
             /></div>
-            <div className='headingprimises'>OUTSIDE PREMISES</div>
-            <div className='textprimises'> We understand that  when you need transportation services outside the boundaries of our plant. Whether it's attending off-site meetings,comming from home to plant vise-versa,  our reliable and convenient ride booking service is here to cater to your needs.</div>
-            <div> <Link to= '/services'><button className='btnsweet'> Click to Enter</button></Link> </div>
+            <div className='headingprimises' >OUTSIDE PREMISES</div>
+            <div className='textprimises'>We understand that there may be times when you need transportation services beyond the boundaries of our plant. Whether it's attending off-site meetings, running errands, or traveling to nearby locations, our reliable and convenient ride booking service is here to cater to your needs.</div>
+            <div> <Link to='/services/outside'><button className='btnsweet'> Click to Enter</button></Link> </div>
           </div>
         </div>
       </section>
@@ -82,14 +83,14 @@ const Home = () => {
         <div className='vichiledivhai'>
           <div className='vechieleselection'>Vehicle Selection Process</div>
           <div className='textselectionprocess'>A4 network provide you a simplest way to select your seat with help of illustration and map so that you can easily use our interface.</div>
-               <div className='selctionpathclass'>   <img src={pathselection} alt="Students"
-                  widht={55}
-                  height={49}
-                  loading='lazy'
-                  
+          <div className='selctionpathclass'>   <img src={pathselection} alt="Students"
+            widht={55}
+            height={49}
+            loading='lazy'
 
-                />
-                 </div>
+
+          />
+          </div>
         </div>
       </section>
 
@@ -99,7 +100,7 @@ const Home = () => {
           <div className='reviewsectionhai'>
             <div className='singlereview'>
               <div className='imageiconscom'>
-                
+
                 <div className='imagekabaap'> <img src={reviewicon} alt="Students"
                   widht={55}
                   height={49}
@@ -116,12 +117,12 @@ const Home = () => {
                 /></div>
               </div>
               <div className='reviewtexthai'> whole journey was good and effective . We are four persons in journey  enjoying well “</div>
-              <div className='starthai'><BsFillStarFill/> <BsFillStarFill/><BsFillStarFill/> </div>
+              <div className='starthai'><BsFillStarFill /> <BsFillStarFill /><BsFillStarFill /> </div>
               <div className='namereview'>-Sophia from India</div>
             </div>
             <div className='singlereview'>
-              <div  className='imageiconscom'>
-               
+              <div className='imageiconscom'>
+
                 <div className='imagekabaap'> <img src={reviewicon} alt="Students"
                   widht={55}
                   height={49}
@@ -138,12 +139,12 @@ const Home = () => {
                 /></div>
               </div>
               <div className='reviewtexthai'>My bus ride from dhanbad to bokaro was amazing, spotlessly clean bus No words</div>
-              <div className='starthai'><BsFillStarFill/> <BsFillStarFill/><BsFillStarFill/><BsFillStarFill/> </div>
+              <div className='starthai'><BsFillStarFill /> <BsFillStarFill /><BsFillStarFill /><BsFillStarFill /> </div>
               <div className='namereview' >-Abhay from India</div>
             </div>
             <div className='singlereview'>
-              <div  className='imageiconscom'>
-                
+              <div className='imageiconscom'>
+
                 <div className='imagekabaap'> <img src={reviewicon} alt="Students"
                   widht={55}
                   height={49}
@@ -160,7 +161,7 @@ const Home = () => {
                 /></div>
               </div>
               <div className='reviewtexthai'>My bus ride from dhanbad to bokaro was amazing, spotlessly clean bus No words.</div>
-              <div className='starthai'><BsFillStarFill/> <BsFillStarFill/><BsFillStarFill/><BsFillStarFill/> <BsFillStarFill/></div>
+              <div className='starthai'><BsFillStarFill /> <BsFillStarFill /><BsFillStarFill /><BsFillStarFill /> <BsFillStarFill /></div>
               <div className='namereview' >-Akshay from India</div>
             </div>
           </div>
@@ -174,41 +175,41 @@ const Home = () => {
           <div className='whatwedodivhai'>
             <div className='whatwedodiv1'>
               <div className='iconplacement'>
-              <div className='imagekabaap'> <img src={realtime} alt="Students"
+                <div className='imagekabaap'> <img src={realtime} alt="Students"
                   widht={55}
                   height={49}
                   loading='lazy'
                   className='primisesimag'
 
                 /></div>
-                 </div>
+              </div>
               <div className='headingwhatwedo'>Real-Time Bus Tracking:</div>
               <div className='whatwetext'>Our system utilizes GPS and cellular   to track buses in real time. Passengers can conveniently access accurate arrival and departure times, allowing them to plan their journeys more effectively.</div>
             </div>
-            <div  className='whatwedodiv1'>
+            <div className='whatwedodiv1'>
               <div className='iconplacement'>
-              <div className='imagekabaap'> <img src={routeopti} alt="Students"
+                <div className='imagekabaap'> <img src={routeopti} alt="Students"
                   widht={55}
                   height={49}
                   loading='lazy'
                   className='primisesimag'
 
                 /></div>
-                 </div>
+              </div>
               <div className='headingwhatwedo'> Route Optimization:  </div>
               <div className='whatwetext'>We go beyond tracking and offer  intelligent route optimization solutions. By analyzing traffic patterns, passenger demand, and other factors, our system suggests optimal routes for buses to minimize travel time,</div>
             </div>
 
-            <div  className='whatwedodiv1'>
+            <div className='whatwedodiv1'>
               <div className='iconplacement'>
-              <div className='imagekabaap'> <img src={analytic} alt="Students"
+                <div className='imagekabaap'> <img src={analytic} alt="Students"
                   widht={55}
                   height={49}
                   loading='lazy'
                   className='primisesimag'
 
                 /></div>
-              
+
               </div>
               <div className='headingwhatwedo'>Data Analytics and Reporting:</div>
               <div className='whatwetext' >We provide comprehensive data analytics and reporting tools to help administrators and operators make informed decisions.
@@ -222,39 +223,39 @@ const Home = () => {
       <section>
         <div className='backgroundcontact'>
           <div className='imagecontact'> <img src={landing} alt="Students"
-              widht={55}
-              height={49}
-              loading='lazy'
-              className="contactkaimage"
-            />
-            </div>
+            widht={55}
+            height={49}
+            loading='lazy'
+            className="contactkaimage"
+          />
+          </div>
 
-          <div  className='formcontacthai'>
-             <div className='headingcontact'>
-             <img src={logo} alt= "logo " width={65} height={32} loading='lazy'/>
-               <div className='a4network'>Network</div>
-              </div>
-          <div className='texxtformcenter'>
-            <div className='contacthai'>Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eius</div>
-            <div><input className='inputcontact' type='text' placeholder='Your Name'></input></div>
-            <div><input className='inputcontact' type='email' placeholder='Email'></input></div>
-            <div><textarea className='inputcontact' type='text' placeholder='Text'></textarea></div>
-            <div ><button className='btncontacthai'>Get in Touch With Us</button></div>
-            <div className='socialmedaiicons'>
-            <div><a href='https://www.instagram.com'> <BsInstagram className='icons' /> </a></div>
-            <div><a href='https://www.facebook.com/'>< FaFacebookF className='icons' /> </a></div>
-             <div> <a href='https://www.messenger.com/'><BsMessenger className='icons' /></a></div>
-             <div><a href='https://web.telegram.org/a/'><RiTelegramLine className='icons' /></a></div>
+          <div className='formcontacthai'>
+            <div className='headingcontact'>
+              <img src={logo} alt="logo " width={65} height={32} loading='lazy' />
+              <div className='a4network'>Network</div>
             </div>
+            <div className='texxtformcenter'>
+              <div className='contacthai'>Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eius</div>
+              <div><input className='inputcontact' type='text' placeholder='Your Name'></input></div>
+              <div><input className='inputcontact' type='email' placeholder='Email'></input></div>
+              <div><textarea className='inputcontact' type='text' placeholder='Text'></textarea></div>
+              <div ><button className='btncontacthai'>Get in Touch With Us</button></div>
+              <div className='socialmedaiicons'>
+                <div><a href='https://www.instagram.com'> <BsInstagram className='icons' /> </a></div>
+                <div><a href='https://www.facebook.com/'>< FaFacebookF className='icons' /> </a></div>
+                <div> <a href='https://www.messenger.com/'><BsMessenger className='icons' /></a></div>
+                <div><a href='https://web.telegram.org/a/'><RiTelegramLine className='icons' /></a></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      
-         <Footer/>
-     
-   
+
+      <Footer />
+
+
 
 
 

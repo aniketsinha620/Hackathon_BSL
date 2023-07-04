@@ -59,20 +59,22 @@ const Carddashboard = () => {
 
 
             {bool ? <><div className='cardcollection'>
-              <h1 className='cardcollection1-h1'>REGISTERED BUSES </h1>
+              <h1 className='cardcollection1-h1'>REGISTERED VEHICLE</h1>
 
               <BusdetailCard callback={handleClick1}
                 img={"/bus2.jpg"} busname={"ATT KING"} source={"CHAS"} destination={"BOKARO"} />
               <BusdetailCard callback={handleClick1}
-                img={"/bus1.jpg"} busname={"SHIV SHAKTI"} source={"BOKARO"} destination={"DHANBAD"} />
+                img={"/car1.jpg"} busname={"SHIV SHAKTI"} source={"RMHS GATE"} destination={"4 LANE"} />
               <BusdetailCard callback={handleClick1}
                 img={"/bus3.jpg"} busname={"SRS TRAVEL"} source={"CHAS"} destination={"SINDRI"} />
               <BusdetailCard callback={handleClick1}
-                img={"/bus1.jpg"} busname={"VRL TRAVELS "} source={"CHAS"} destination={"RAM NAGAR COLONY"} />
+                img={"/car2.jpg"} busname={"VRL TRAVELS "} source={"LOHANCHAL"} destination={"BADHADIH"} />
               <BusdetailCard callback={handleClick1}
                 img={"/bus2.jpg"} busname={"ASHOK LEYLAND"} source={"BOKARO"} destination={"SECTOR 4"} />
               <BusdetailCard callback={handleClick1}
                 img={"/bus3.jpg"} busname={"ATT KING"} source={"CHAS"} destination={"SECTOR 2"} />
+                <BusdetailCard callback={handleClick1}
+                img={"/bus2.jpg"} busname={"ATT KING"} source={"CHAS"} destination={"SECTOR 2"} />
 
             </div> </> :
               <div> <Busdriver

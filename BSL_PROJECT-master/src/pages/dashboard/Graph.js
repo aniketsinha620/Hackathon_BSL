@@ -3,6 +3,7 @@ import { Doughnut } from 'react-chartjs-2'
 import { Chart, ArcElement } from 'chart.js'
 import Labels from './Labels';
 import './Graph.css'
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 Chart.register(ArcElement);
 
@@ -52,15 +53,26 @@ const config = {
 
 
 
-const Graph = () => {
+const Graph = (props) => {
+    
+
+
+    const handleClick = () => {
+        if (props.onClose) {
+            props.onClose();
+        }}
     return (
         <div >
             <div className='graphkasotory'>
+            <button className="iconBusDriver   text-richblack-900 " onClick={handleClick}><ArrowBackIcon /></button>
+
                 <div className='chatii'>
                     {/* Chart */}
                     {/* Instead of chart I am using chart js library to add chart in my project */}
                     <Doughnut className='ciclehai' {...config} > </Doughnut>
-                    <h3 className=' centerii mb-4 font-bold title'>Ak Travel                    <span className='block text-3xl text-emerald-400'>${1460}</span>
+                    <h3 className=' centerii mb-4 font-bold title'>{props.busname}        
+                    
+                     <span className='block text-3xl text-emerald-400'>{props.source}</span>
                     </h3>
                 </div>
           
@@ -68,9 +80,8 @@ const Graph = () => {
                     <Labels></Labels>
 
                 </div>
-
             </div>
-
+            
         </div>
     )
 }
