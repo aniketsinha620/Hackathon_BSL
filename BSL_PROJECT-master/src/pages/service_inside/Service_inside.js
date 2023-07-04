@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import "../service/Service.css";
 import Card from '../service/Card';
@@ -106,7 +106,7 @@ export default function Services_inside() {
         if (sourcePlace) {
             const sourceLatitude = sourcePlace.latitude;
             const sourceLongitude = sourcePlace.longitude;
-            setSource([sourceLatitude, sourceLongitude]);
+            setSource([sourceLongitude, sourceLatitude]);
             console.log(source);
         } else {
             const results = await provider.search({ query: SourceRef.current.value });
@@ -124,7 +124,7 @@ export default function Services_inside() {
         if (destinationPlace) {
             const destinationLatitude = destinationPlace.latitude;
             const destinationLongitude = destinationPlace.longitude;
-            setDestination([destinationLatitude, destinationLongitude]);
+            setDestination([destinationLongitude, destinationLatitude]);
             console.log(destination);
         } else {
             const cityResults = await provider.search({ query: DestinationRef.current.value });
@@ -146,6 +146,21 @@ export default function Services_inside() {
     const handleChange = () => {
         console.log("hello");
     };
+
+
+    useEffect(() => {
+        if (source === null) {
+            setSource([86.1828, 23.6362]);
+        }
+    }, [source]);
+
+
+    useEffect(() => {
+        if (destination === null) {
+            setDestination([86.151115, 23.669296]);
+
+        }
+    }, [destination]);
 
     return (
 
@@ -191,12 +206,12 @@ export default function Services_inside() {
                 {card === true ?
                     <div className='bus-card'>
                         <h1 className='headingservice'>Our Vehicles</h1>
-                        <Card  place="inside" />
+                        <Card place="inside" />
                     </div> :
                     <div className='Card_bus-service'>
                         <div>
                             <Card_bus source={SourceRef.current.value} destination={DestinationRef.current.value}
-                                scordinate={source} dcordinate={destination}  place="inside"/>
+                                scordinate={source} dcordinate={destination} place="inside" />
                         </div>
                     </div>}
             </section>
