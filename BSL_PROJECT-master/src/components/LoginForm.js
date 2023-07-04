@@ -33,7 +33,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
  
 
     const loginuser = async(e) => {
-        e.preventDefault();
+       
 
         const { email, password } = inpval;
 
@@ -57,32 +57,46 @@ const LoginForm = ({ setIsLoggedIn }) => {
             // console.log("user login succesfully done");
 
 
-            const data = await fetch("/login",{
-                method:"POST",
-                headers:{
-                    "Content-Type":"application/json"
-                },
-                body:JSON.stringify({
-                     email, password
-                })
-            });
+            // const data = await fetch("/login",{
+            //     method:"POST",
+            //     headers:{
+            //         "Content-Type":"application/json"
+            //     },
+            //     body:JSON.stringify({
+            //          email, password
+            //     })
+            // });
 
-            const res = await data.json();
-             console.log(res);
+            // const res = await data.json();
+            //  console.log(res);
              
 
-            if(res.status === 201){
+            // if(res.status === 201){
                 
-                localStorage.setItem("usersdatatoken",res.result.token);
-                setIsLoggedIn(true);
-                history("/")
+            //     localStorage.setItem("usersdatatoken",res.result.token);
+            //     setIsLoggedIn(true);
+            //     history("/")
 
-                setInpval({...inpval,email:"",password:""});
+            //     setInpval({...inpval,email:"",password:""});
                
-            }
+            // }
+      
+            e.preventDefault();
+            setIsLoggedIn(true);
+            toast.success("You are successfully logged in 😃!", {
+                position: "top-center"
+            });
+            history("/dashboard/Admin");
+             
+                        
+                      
+                    
           
         }
+
     }
+    
+   
 
     return (
         <>
@@ -90,7 +104,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
                 <div className="form_data">
                    
 
-                    <form className='flex flex-col w-full mt-1'>
+                    <form  className='flex flex-col w-full mt-1'>
                         <div className="form_input">
                             <label htmlFor="email">Email</label>
                             <input type="email" value={inpval.email} onChange={setVal} name="email" id="email" placeholder='Enter Your Email Address' />
@@ -160,6 +174,7 @@ export default LoginForm
 //     }
 
 //     function submitHandler(event) {
+        
 //         event.preventDefault();
 //         setIsLoggedIn(true);
 //         toast.success("Logged In");
