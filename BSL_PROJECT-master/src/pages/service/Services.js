@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import "./Service.css";
 import Card from './Card';
@@ -146,7 +146,19 @@ export default function Service() {
   const handleChange = () => {
     console.log("hello");
   };
+  useEffect(() => {
+    if (source === null) {
+      setSource([23.6362, 86.1828]);
+    }
+  }, [source]);
 
+
+  useEffect(() => {
+    if (destination === null) {
+      setDestination([23.669296, 86.151115]);
+
+    }
+  }, [destination]);
   return (
 
 

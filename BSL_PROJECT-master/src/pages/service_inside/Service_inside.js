@@ -45,7 +45,7 @@ const places = [
     // Add more places in Bokaro as needed
 ];
 
-export default function Service() {
+export default function Services_inside() {
     const provider = new OpenStreetMapProvider();
     const [searchResults, setSearchResults] = useState([]);
     const [source, setSource] = useState([]);
