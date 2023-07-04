@@ -82,7 +82,7 @@ const Home = () => {
       <section>
         <div className='vichiledivhai'>
           <div className='vechieleselection'>Vehicle Selection Process</div>
-          <div className='textselectionprocess'>A4 network provide you a simplest way to select your seat with help of illustration and map so that you can easily use our interface.</div>
+          <div className='textselectionprocess'>A4 network provide you a simplest way to select your seat with help of illustration and map so that you can easily use our interface</div>
           <div className='selctionpathclass'>   <img src={pathselection} alt="Students"
             widht={55}
             height={49}
