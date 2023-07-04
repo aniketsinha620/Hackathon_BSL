@@ -106,7 +106,7 @@ export default function Service() {
     if (sourcePlace) {
       const sourceLatitude = sourcePlace.latitude;
       const sourceLongitude = sourcePlace.longitude;
-      setSource([sourceLatitude, sourceLongitude]);
+      setSource([sourceLongitude, sourceLatitude]);
       console.log(source);
     } else {
       const results = await provider.search({ query: SourceRef.current.value });
@@ -124,7 +124,7 @@ export default function Service() {
     if (destinationPlace) {
       const destinationLatitude = destinationPlace.latitude;
       const destinationLongitude = destinationPlace.longitude;
-      setDestination([destinationLatitude, destinationLongitude]);
+      setDestination([destinationLongitude, destinationLatitude]);
       console.log(destination);
     } else {
       const cityResults = await provider.search({ query: DestinationRef.current.value });
@@ -148,14 +148,16 @@ export default function Service() {
   };
   useEffect(() => {
     if (source === null) {
-      setSource([23.6362, 86.1828]);
+      setSource([86.1828, 23.6362]);
+      console.log("useeffect")
     }
   }, [source]);
 
 
   useEffect(() => {
     if (destination === null) {
-      setDestination([23.669296, 86.151115]);
+      setDestination([86.151115, 23.669296]);
+      console.log("useeffect")
 
     }
   }, [destination]);
