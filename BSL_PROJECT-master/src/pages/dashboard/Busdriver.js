@@ -1,6 +1,17 @@
 import React from 'react'
 import "./BusdetailCard.css"
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+
+
 export default function Busdriver(props) {
+
+    const handleClick = () => {
+        if (props.onClose) {
+            props.onClose();
+        }
+    };
+
+
     return (
         <div className='cardcollection2'>
             <div className='image'>
@@ -12,13 +23,15 @@ export default function Busdriver(props) {
                         <p>{`TO:- ${props.destination}`}</p>
                     </div>
                 </div>
+                
+                <button className="iconBusDriver   text-richblack-900 " onClick={handleClick}><ArrowBackIcon /></button>
             </div>
 
 
 
             <div className='detail-busdriver'>
                 <h2>{props.busname}</h2>
-                
+
                 <div className='information-busdriver'>
 
                     <p >BUS PLATE NO :-</p>
@@ -44,7 +57,10 @@ export default function Busdriver(props) {
                     <p >STATUS :-</p>
                     <p className='information-value'>NOT RUNNING</p>
                 </div>
+
             </div>
+
         </div>
     )
 }
+// onClick={() => setbool(prev => !prev)}

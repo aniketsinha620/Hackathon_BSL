@@ -32,7 +32,7 @@ export default function BusdetailCard(props) {
                 </div>
                 <div className='route-dashboard'>
                     <div><RouteIcon /></div>
-                    <div className='routeicon'>{`${props.source}->${props.destination}`}</div>
+                    <div className='routeicon'>{`${props.source}  ->    ${props.destination}`}</div>
                 </div>
 
 

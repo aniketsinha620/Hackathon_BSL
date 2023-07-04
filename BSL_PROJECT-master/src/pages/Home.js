@@ -35,8 +35,8 @@ const Home = () => {
             <div className='exploreabout'> <button className='btnsweet'>Explore more</button> </div>
           </div>
           <div className='landingimagehai' >
-
-            <img src={landing} alt="Students"
+             
+            <img src='https://www.traveldealsfinder.com/wp-content/uploads/bokaro.jpg' alt="Students"
               widht={55}
               height={49}
               loading='lazy'
@@ -60,7 +60,7 @@ const Home = () => {
 
             /></div>
             <div className='headingprimises'>INSIDE PREMISES</div>
-            <div className='textprimises'>Welcome to our plant transportation service, where we offer convenient and efficient rides within our facility. Whether you need to travel between different sections of the plant, visit specific workstations, or reach important meetings on time, our dedicated transportation system is here to assist you.</div>
+            <div className='textprimises'>Welcome to our plant transportation service, where we offer convenient and efficient rides within our facility. Whether you need to travel between different sections of the plant, visit specific workstations, or reach important meetings on time.</div>
             <div>  <Link to= '/services'><button className='btnsweet'> Click to Enter</button></Link> </div>
           </div>
           <div className='insideprimisis'>
@@ -72,7 +72,7 @@ const Home = () => {
 
             /></div>
             <div className='headingprimises'>OUTSIDE PREMISES</div>
-            <div className='textprimises'>We understand that there may be times when you need transportation services beyond the boundaries of our plant. Whether it's attending off-site meetings, running errands, or traveling to nearby locations, our reliable and convenient ride booking service is here to cater to your needs.</div>
+            <div className='textprimises'> We understand that  when you need transportation services outside the boundaries of our plant. Whether it's attending off-site meetings,comming from home to plant vise-versa,  our reliable and convenient ride booking service is here to cater to your needs.</div>
             <div> <Link to= '/services'><button className='btnsweet'> Click to Enter</button></Link> </div>
           </div>
         </div>
@@ -116,7 +116,7 @@ const Home = () => {
                 /></div>
               </div>
               <div className='reviewtexthai'> whole journey was good and effective . We are four persons in journey  enjoying well “</div>
-              <div className='starthai'><BsFillStarFill/> <BsFillStarFill/><BsFillStarFill/><BsFillStarFill/> </div>
+              <div className='starthai'><BsFillStarFill/> <BsFillStarFill/><BsFillStarFill/> </div>
               <div className='namereview'>-Sophia from India</div>
             </div>
             <div className='singlereview'>
@@ -139,7 +139,7 @@ const Home = () => {
               </div>
               <div className='reviewtexthai'>My bus ride from dhanbad to bokaro was amazing, spotlessly clean bus No words</div>
               <div className='starthai'><BsFillStarFill/> <BsFillStarFill/><BsFillStarFill/><BsFillStarFill/> </div>
-              <div className='namereview' >-Aman from India</div>
+              <div className='namereview' >-Abhay from India</div>
             </div>
             <div className='singlereview'>
               <div  className='imageiconscom'>
@@ -160,7 +160,7 @@ const Home = () => {
                 /></div>
               </div>
               <div className='reviewtexthai'>My bus ride from dhanbad to bokaro was amazing, spotlessly clean bus No words.</div>
-              <div className='starthai'><BsFillStarFill/> <BsFillStarFill/><BsFillStarFill/><BsFillStarFill/> </div>
+              <div className='starthai'><BsFillStarFill/> <BsFillStarFill/><BsFillStarFill/><BsFillStarFill/> <BsFillStarFill/></div>
               <div className='namereview' >-Akshay from India</div>
             </div>
           </div>

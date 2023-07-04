@@ -183,8 +183,9 @@ const About = () => {
           </div>
 
           <div className='textareaabout'>
-            <div className='personabouttext'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
-            <div> buttons </div>
+            <div className='personabouttext'>I am Anand keshri  Currently i am pursuing BTech in electronics and communication Engineering batch of 2k21 from BIT Sindri. I live in the city of Hazaribag. I have done schooling from Surekha prakash Bhai Public school.</div>
+            <div className='personabouttext'>I have good knowledge of web-development and i also have I have two year experience in stock market as a short term invester and i know foundamental as well as technical analysis of stock market</div>
+            
           </div>
         </div>
       </section>
