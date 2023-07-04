@@ -12,6 +12,11 @@ const dhanbad = [23.7957, 86.4304];
 const chandrapura = [23.74877, 86.11955];
 const jharia = [23.7426,86.4111];
 const sindri = [23.6546, 86.4737];
+let CarIcon = L.icon({
+  iconUrl: "/car-move.gif",
+  iconSize: [60, 40],
+});
+
 
 L.Marker.prototype.options.icon = L.icon({
     iconUrl:
@@ -33,7 +38,8 @@ export default function Routing(props) {
 
      
         const marker1 = L.marker([22.8046, 86.2029], {
-            icon: DefaultIcon
+          icon: props.place === "inside" ? CarIcon : DefaultIcon,
+
         }).addTo(map);
         const routingControl1 = L.Routing.control({
             waypoints: [
@@ -60,7 +66,7 @@ export default function Routing(props) {
 
        
         const marker2 = L.marker([22.8046, 86.2029], {
-          icon: DefaultIcon
+          icon: props.place === "inside" ? CarIcon : DefaultIcon,
         }).addTo(map);
         const routingControl2 = L.Routing.control({
           waypoints: [
@@ -81,7 +87,8 @@ export default function Routing(props) {
 
        
         const marker3 = L.marker([22.8046, 86.2029], {
-            icon: DefaultIcon
+          icon: props.place === "inside" ? CarIcon : DefaultIcon,
+          
         }).addTo(map);
         const routingControl3 = L.Routing.control({
             waypoints: [

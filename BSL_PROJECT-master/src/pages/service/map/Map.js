@@ -23,6 +23,10 @@ let DefaultIcon = L.icon({
   iconUrl: "/bus-gif.gif",
   iconSize: [60, 60],
 });
+let CarIcon = L.icon({
+  iconUrl: "/car-move.gif",
+  iconSize: [60, 40],
+});
 
 
 const defaultIcon = new L.Icon({
@@ -80,29 +84,45 @@ export default function Map(props) {
               <Popup>Bus Location</Popup>
             </Marker>
           }
-          <Marker position={[source[1], source[0]]} icon={DefaultIcon}>
+
+
+          {props.place === "inside" ? <Marker position={[source[1], source[0]]} icon={CarIcon}>
             <Popup>Your Location</Popup>
-          </Marker>
-       
+          </Marker> :
+            <Marker position={[source[1], source[0]]} icon={DefaultIcon}>
+              <Popup>Your Location</Popup>
+            </Marker>}
 
 
-          <Circle center={[source[1], source[0]]} radius={25000} />
-          {markers.map((marker, index) => (
-            <Marker
-              key={index}
-              position={marker.position}
-              icon={DefaultIcon}
-            >
-              <Popup>{marker.location}</Popup>
-            </Marker>
-          ))}
+
+          {props.place === "inside" ? <><Circle center={[source[1], source[0]]} radius={25000} color="green"/>
+            {markers.map((marker, index) => (
+              <Marker
+                key={index}
+                position={marker.position}
+                icon={CarIcon}
+              >
+                <Popup>{marker.location}</Popup>
+              </Marker>
+            ))}</> :
+            <><Circle center={[source[1], source[0]]} radius={25000}  />
+              {markers.map((marker, index) => (
+                <Marker
+                  key={index}
+                  position={marker.position}
+                  icon={DefaultIcon}
+                >
+                  <Popup>{marker.location}</Popup>
+                </Marker>
+              ))}</>}
+
 
 
         </MapContainer>
         <button className='btn-booking' onClick={() => handleClick()}>Explore More</button>
 
       </div> : <div className="newmapcontainer">
-        <Expand source={[source[1], source[0]]} destination={[destination[1], destination[0]]} />
+        <Expand source={[source[1], source[0]]} destination={[destination[1], destination[0]]}  place={props.place}/>
         <button className="btn-booking-expand" onClick={() => handleClick()}>Close</button>
       </div>}
     </>
