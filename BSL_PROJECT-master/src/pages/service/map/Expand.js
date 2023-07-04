@@ -11,6 +11,10 @@ import Routing from "./Routing";
 const position = [23.6693, 86.1511];
 const position1 = [23.7470, 86.1187];
 const position2 = [23.6362, 86.1828];
+let CarIcon = L.icon({
+    iconUrl: "/car-move.gif",
+    iconSize: [60, 40],
+});
 const defaultIcon = new L.Icon({
     iconUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png",
     iconSize: [15, 25],
@@ -59,10 +63,10 @@ export default function Map(props) {
                         <Popup>Bus Location</Popup>
                     </Marker>
                 }
-               
 
 
-                <Circle center={position} radius={25000} />
+                {props.place === "inside" ? <Circle center={position} radius={25000} color="green" /> : <Circle center={position} radius={25000} />}
+
                 {markers.map((marker, index) => (
                     <Marker
                         key={index}
@@ -73,10 +77,10 @@ export default function Map(props) {
                     </Marker>
                 ))}
 
-                
-                <Routing source={props.source}  destination={props.destination}/>
+
+                <Routing source={props.source} destination={props.destination} place={props.place} />
             </MapContainer>
-           
+
 
         </div>
     );

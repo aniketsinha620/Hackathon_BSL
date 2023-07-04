@@ -61,7 +61,7 @@ const Home = () => {
             /></div>
             <div className='headingprimises'>INSIDE PREMISES</div>
             <div className='textprimises'>Welcome to our plant transportation service, where we offer convenient and efficient rides within our facility. Whether you need to travel between different sections of the plant, visit specific workstations, or reach important meetings on time, our dedicated transportation system is here to assist you.</div>
-            <div>  <Link to= '/services'><button className='btnsweet'> Click to Enter</button></Link> </div>
+            <div>  <Link to= '/services/inside'><button className='btnsweet'> Click to Enter</button></Link> </div>
           </div>
           <div className='insideprimisis'>
             <div className='sudharna'> <img src={outside} alt="Students"
@@ -73,7 +73,7 @@ const Home = () => {
             /></div>
             <div className='headingprimises'>OUTSIDE PREMISES</div>
             <div className='textprimises'>We understand that there may be times when you need transportation services beyond the boundaries of our plant. Whether it's attending off-site meetings, running errands, or traveling to nearby locations, our reliable and convenient ride booking service is here to cater to your needs.</div>
-            <div> <Link to= '/services'><button className='btnsweet'> Click to Enter</button></Link> </div>
+            <div> <Link to= '/services/outside'><button className='btnsweet'> Click to Enter</button></Link> </div>
           </div>
         </div>
       </section>
