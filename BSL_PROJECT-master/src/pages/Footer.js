@@ -14,7 +14,7 @@ const Footer = () => {
               <div className="footer__data">
                    <h3 className="footer__title">Travel</h3>
                    <div className="footer__description"> Travel you choose the <br/> destination,
-                    we offer you the <br/> experience.
+                    we offer you the <br/> experiences.
                         </div>
                         <div className='iconssettlement'>
                         <div><a href='https://www.instagram.com'> <BsInstagram className='icons' /> </a></div>
